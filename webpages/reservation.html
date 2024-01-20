@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveElite - Reservation</title>
+
+    <!--EXTERNAL CSS-->
+    <link rel="stylesheet" href="../assets/css/reservation.css">
+
+    <!--FAVICON-->
+    <link rel="icon" href="../assets/images/Favicon.ico">
+
+    <!--FONTAWSOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="container">
+        <div class="navbar">
+            <img class="logo" src="../assets/images/Logo.png" alt="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="../index.html"> Home</a></li>
+                    <li><a href="about.html"> About Us</a></li>
+                    <li><a href="cars.html"> Cars</a></li>
+                    <li><a href="reservation.html"> Reservation</a></li>
+                    <li><a href="contact.html"> Contact</a></li>
+                </ul>
+            </nav>
+            <img class="menu-icon" src="../assets/images/Menu.png" onclick="togglemenu()">
+        </div>
+    </section>
+
+    <section class="reservation-content">
+        <div class="reservation-content-intro">
+            <h2><span>Book Your Drive</span></h2>
+            <p>Ready to elevate your journey? Secure your preferred vehicle by completing our easy reservation process. 
+                Simply provide your details, choose your car, and get ready to hit the road in style.</p>
+        </div>
+
+        <div class="reserve-now">
+            <h3>Reservation</h3>
+            <form>
+                <label for="pickup-date">Pickup Date:</label>
+                <input type="date" id="pickup-date">
+                <label for="dropoff-date">Drop-Off Date:</label>
+                <input type="date" id="dropoff-date">
+                <label for="choose-car">Choose Vehicle</label>
+                <select name="cars" id="cars">
+                    <option value="" disabled selected>Choose your vehicle...</option>
+                    <optgroup label="Sedan">
+                        <option value="ford-fusion">Ford Fusion</option>
+                        <option value="toyota-camry">Toyota Camry</option>
+                        <option value="chevrolet-malibu">Chevrolet Malibu</option>
+                        <option value="honda-accord">Honda Accord</option>
+                        <option value="nissan-altima">Nissan Altima</option>
+                        <option value="volkswagen-passat">Volkswagen Passat</option>
+                        <option value="hyundai-sonata-hybrid">Hyundai Sonata Hybrid</option>
+                        <option value="audi-a4">Audi A4</option>
+                        <option value="bmw-3-series">BMW 3 Series</option>
+                        <option value="mercedes-benz-c-class">Mercedes-Benz C-Class</option>
+                        <option value="lexus-es">Lexus ES</option>
+                        <option value="tesla-model-3">Tesla Model 3</option>
+                    </optgroup>
+
+                    <optgroup label="SUV">
+                        <option value="kia-sportage">Kia Sportage</option>
+                        <option value="toyota-rav4">Toyota RAV4</option>
+                        <option value="mazda-cx-5">Mazda CX-5</option>
+                        <option value="honda-cr-v">Honda CR-V</option>
+                        <option value="jeep-grand-cherokee">Jeep Grand Cherokee</option>
+                        <option value="subaru-outback">Subaru Outback</option>
+                        <option value="hyundai-palisade">Hyundai Palisade</option>
+                        <option value="ford-explorer">Ford Explorer</option>
+                        <option value="chevrolet-tahoe">Chevrolet Tahoe</option>
+                        <option value="ford-expedition">Ford Expedition</option>
+                        <option value="nissan-armada">Nissan Armada</option>
+                        <option value="toyota-land-cruiser">Toyota Land Cruiser</option>
+                    </optgroup>
+
+                    <optgroup label="Van">
+                        <option value="mitsubishi-l300">Mitsubishi L300</option>
+                        <option value="toyota-hiace">Toyota Hiace</option>
+                        <option value="nissan-nv350-urvan">Nissan NV350 Urvan</option>
+                        <option value="ford-transit">Ford Transit</option>
+                        <option value="fiat-ducato">Fiat Ducato</option>
+                        <option value="volkswagen-transporter">Volkswagen Transporter</option>
+                        <option value="kia-carnival">Kia Carnival</option>
+                        <option value="chevrolet-express">Chevrolet Express</option>
+                        <option value="ram-promaster">Ram ProMaster</option>
+                        <option value="hyundai-h350">Hyundai H350</option>
+                        <option value="peugeot-boxer">Peugeot Boxer</option>
+                        <option value="mercedes-benz-sprinter">Mercedes-Benz Sprinter</option>
+                    </optgroup>
+                </select>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter name">
+                <label for="contact">Contact Number:</label>
+                <input type="text" id="contact" placeholder="Enter number">
+                <p>Strictly payment first before you pickup the vehicle.</p>
+                <input class="submit-button" type="submit" value="Submit Reservation">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>DriveElite <span>Rentals</span></h3>
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">Pricing</a>         
+          <a href="#">About</a>           
+          <a href="#">Faq</a>            
+          <a href="#">Contact</a>
+        </p> 
+        <p class="footer-company-name">DriveElite Rentals © 2024</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Claro M. Recto Ave</span> Cagayan de Oro, 9000 Misamis Oriental</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+63 905-612-2650</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:#">driveeliterents@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          DriveElite Rentals offers a curated fleet of luxury vehicles, delivering unparalleled driving experiences with a commitment to quality and customer satisfaction.
+        </p>
+
+        <div class="footer-icons">
+          <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+          <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+          <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+        var menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px"
+
+        function togglemenu() {
+            if(menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "170px"
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+</html>

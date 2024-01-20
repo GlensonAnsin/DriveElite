@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveElite - About Us</title>
+
+    <!--EXTERNAL CSS-->
+    <link rel="stylesheet" href="../assets/css/about.css">
+
+    <!--FAVICON-->
+    <link rel="icon" href="../assets/images/Favicon.ico">
+
+    <!--FONTAWSOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="container">
+        <div class="navbar">
+            <img class="logo" src="../assets/images/Logo.png" alt="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="../index.html"> Home</a></li>
+                    <li><a href="about.html"> About Us</a></li>
+                    <li><a href="cars.html"> Cars</a></li>
+                    <li><a href="reservation.html"> Reservation</a></li>
+                    <li><a href="contact.html"> Contact</a></li>
+                </ul>
+            </nav>
+            <img class="menu-icon" src="../assets/images/Menu.png" onclick="togglemenu()">
+        </div>
+    </section>
+
+    <section class="about-content">
+        <div class="about-1">
+            <h2><span>DriveElite Rentals</span></h2>
+            <p>Welcome to DriveElite Rentals, where the road becomes a runway for luxury and performance. 
+                Our journey began with a simple yet profound idea to redefine the car rental experience 
+                by offering a fleet of vehicles that epitomize style, comfort, and sheer driving pleasure. 
+                DriveElite Rentals was founded with a passion for delivering unparalleled driving experiences. 
+                Our mission is to provide our customers with access to the finest vehicles on the market, 
+                coupled with exceptional customer service.</p>
+        </div>
+
+        <div class="about-2">
+            <h3>Our Story</h3>
+            <p>Driven by a passion for automobiles and a commitment to exceeding expectations, 
+                DriveElite Rentals was founded in 2014. From the outset, our goal has been clear: 
+                to provide our customers with access to the finest vehicles on the market.</p>
+            <p>Explore our meticulously curated fleet, featuring an array of elite sedans, luxury SUVs, and high-performance vehicles.</p>
+        </div>
+
+        <div class="about-3">
+            <h3>Our Values</h3>
+            <div class="values">
+              <div class="value-1">
+                <h4>Quality</h4>
+                <p>We pride ourselves on offering a fleet of well-maintained, high-performance vehicles.</p>
+              </div>
+
+              <div class="value-2">
+                <h4>Customer Satisfaction</h4>
+                <p>Your satisfaction is our priority. We go the extra mile to ensure your rental experience exceeds expectations.</p>
+              </div>
+
+              <div class="value-3">
+                <h4>Convenience</h4>
+                <p>Streamlined reservation processes and flexible rental options for your convenience.</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="about-4">
+            <h3>Our Commitment to Excellence</h3>
+            <p>We understand that renting a car is not just about getting from point A to point B; 
+                it's about the experience in between. DriveElite Rentals is committed to excellence in every aspect of our service, 
+                from the moment you choose your vehicle to the final miles of your journey.</p>
+            <p>Our streamlined reservation process and flexible rental options ensure that renting with us is convenient and hassle-free.</p>
+            <p class="last-statement">Join us on the road less ordinary, where every drive is an elite experience.</p>
+        </div>
+    </section>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>DriveElite <span>Rentals</span></h3>
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">Pricing</a>         
+          <a href="#">About</a>           
+          <a href="#">Faq</a>            
+          <a href="#">Contact</a>
+        </p> 
+        <p class="footer-company-name">DriveElite Rentals © 2024</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Claro M. Recto Ave</span> Cagayan de Oro, 9000 Misamis Oriental</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+63 905-612-2650</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:#">driveeliterents@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          DriveElite Rentals offers a curated fleet of luxury vehicles, delivering unparalleled driving experiences with a commitment to quality and customer satisfaction.
+        </p>
+
+        <div class="footer-icons">
+          <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+          <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+          <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+        var menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px"
+
+        function togglemenu() {
+            if(menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "170px"
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* NAVBAR */
+.container {
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 20vh;
+}
+.logo {
+    width: 300px;
+    cursor: pointer;
+}
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+nav ul li a:hover {
+    color: #e75c34;
+}
+/* CARS CONTENT */
+.cars-content {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 50px;
+}
+.cars-content-intro {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.cars-content-intro h2{
+    text-align: center;
+    font-size: 54px;
+}
+.cars-content-intro h2 span {
+    background: linear-gradient(to right, #ffdf2b, #fe6539);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.cars-content-intro p {
+    font-size: 25px;
+    padding-top: 40px;
+}
+/* SEDAN */
+.car-sedan h3 {
+    text-align: center;
+    font-size: 35px;
+    padding: 50px 0;
+}
+.car-sedan .sedan img {
+    width: 450px;
+    border-radius: 10px;
+}
+.car-sedan .sedan h4 {
+    font-size: 25px;
+}
+.car-sedan .sedan p {
+    font-size: 20px;
+}
+.car-sedan .sedan {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.sedan-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/* SUV */
+.car-suv h3 {
+    text-align: center;
+    font-size: 35px;
+    padding: 50px 0;
+}
+.car-suv .suv img {
+    width: 450px;
+    border-radius: 10px;
+}
+.car-suv .suv h4 {
+    font-size: 25px;
+}
+.car-suv .suv p {
+    font-size: 20px;
+}
+.car-suv .suv {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.suv-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/* VAN */
+.car-van h3 {
+    text-align: center;
+    font-size: 35px;
+    padding: 50px 0;
+}
+.car-van .van img {
+    width: 450px;
+    border-radius: 10px;
+}
+.car-van .van h4 {
+    font-size: 25px;
+}
+.car-van .van p {
+    font-size: 20px;
+}
+.car-van .van {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.van-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/* RESERVE BUTTON */
+.reserve-button {
+    text-align: center;
+}
+.reserve-button a button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: white;
+    background: linear-gradient(to right, #ffdf2b, #fe6539);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+.reserve-button a button img {
+    width: 30px;
+    display: none;
+}
+.reserve-button a button:hover img {
+    display: block;
+}
+.reserve-button a button:hover {
+    width: 160px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* FOOTER */
+.footer-distributed{
+    background: #26282c;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 55px 50px;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+/* FOOTER LEFT */
+.footer-distributed .footer-left {
+    width: 40%;
+}
+/* COMPANY NAME */
+.footer-distributed h3 {
+    background: linear-gradient(to right, #ffdf2b, #fe6539);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-size: 50px;
+    margin: 0;
+}
+/* FOOTER LINKS */
+.footer-distributed .footer-links {
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+.footer-distributed .footer-links a {
+    display:inline-block;
+    line-height: 1.8;
+    font-weight:400;
+    text-decoration: none;
+    color:  inherit;
+}
+.footer-distributed .footer-company-name {
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+/* FOOTER CENTER */
+.footer-distributed .footer-center {
+    width: 35%;
+}
+.footer-distributed .footer-center i {
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    font-weight:400;
+    vertical-align: middle;
+    margin:0;
+}
+.footer-distributed .footer-center p span {
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+}
+.footer-distributed .footer-center p a {
+    background: linear-gradient(to right, #ffdf2b, #fe6539);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;;
+}
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+/* FOOTER RIGHT */
+.footer-distributed .footer-right {
+    width: 20%;
+}
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer-distributed .footer-company-about span {
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+.footer-distributed .footer-icons .facebook {
+    background: #106aff;
+    color: white;
+}
+.footer-distributed .footer-icons .twitter {
+    background: #24a3f1;
+    color: white;
+}
+.footer-distributed .footer-icons .linkedin {
+    background: #126bc4;
+    color: white;
+}
+
+/* FOOTER */
+@media (max-width: 1150px) {
+    .footer-distributed{
+      font-size: 14px;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .footer-distributed .footer-center i{
+      margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    /* NAVBAR */
+    .logo {
+        width: 200px;
+    }
+    nav ul {
+        width: 100%;
+        background: linear-gradient(to right, #ffdf2b, #fe6539);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px
+    }
+    nav ul li a {
+        color: white;
+    }
+    .menu-icon {
+        display: block;
+    }
+    #menuList {
+        width: 100%;
+        margin-top: 31px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    /* CARS CONTENT */
+    .cars-content-intro h2{
+        font-size: 49px;
+    }
+    .cars-content-intro p {
+        font-size: 20px;
+    }
+    /* SEDAN */
+    .car-sedan h3 {
+        font-size: 30px;
+    }
+    .car-sedan .sedan img {
+        width: 250px;
+    }
+    .car-sedan .sedan h4 {
+        font-size: 20px;
+    }
+    .car-sedan .sedan p {
+        font-size: 15px;
+    }
+    /* SUV */
+    .car-suv h3 {
+        font-size: 30px;
+    }
+    .car-suv .suv img {
+        width: 250px;
+    }
+    .car-suv .suv h4 {
+        font-size: 20px;
+    }
+    .car-suv .suv p {
+        font-size: 15px;
+    }
+    /* VAN */
+    .car-van h3 {
+        font-size: 30px;
+    }
+    .car-van .van img {
+        width: 250px;
+    }
+    .car-van .van h4 {
+        font-size: 20px;
+    }
+    .car-van .van p {
+        font-size: 15px;
+    }
+    /* FOOTER */
+    .footer-distributed h3{
+        font-size: 30px;
+    }
+}
