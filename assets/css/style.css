@@ -135,7 +135,8 @@ button:hover {
     margin-top: 100px;
 }
 .intro-1 p {
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 28px;
 }
 .intro-2 {
     margin-bottom: 50px;
@@ -145,7 +146,8 @@ button:hover {
     font-size: 35px;
 }
 .intro-2 ul li {
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 28px;
     list-style: none;
     padding-bottom: 10px;
 }
@@ -299,17 +301,29 @@ button:hover {
 @media (max-width: 1150px) {
   .footer-distributed{
     font-size: 14px;
+    text-align: center;
   }
   .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
   .footer-distributed .footer-right{
     display: block;
     width: 100%;
     margin-bottom: 40px;
     text-align: center;
   }
+  .footer-distributed .footer-center {
+    width: fit-content;
+    display: inline-grid;
+  }
   .footer-distributed .footer-center i{
     margin-left: 0;
+  }
+  .footer-center div {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .footer-distributed .footer-center p {
+    text-align: left;
   }
 }
 
@@ -366,13 +380,15 @@ button:hover {
   }
   /* HOME CONTENT */
   .intro-1 p {
-      font-size: 20px;
+      font-size: 18px;
+      line-height: 26px;
   }
   .intro-2 h3 {
       font-size: 30px;
   }
   .intro-2 ul li {
-      font-size: 20px;
+      font-size: 18px;
+      line-height: 26px;
   }
   /* FOOTER */
   .footer-distributed h3{
